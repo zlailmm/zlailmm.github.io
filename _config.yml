@@ -1,6 +1,6 @@
 # Site settings 配置站点
 title: 'SpaZe'
-description: '欢迎来到 SpaZe 网站！这是一个让你的网上体验变得更美好的地方，相信我，它会让你的网上冒险变得伟大！'
+description: '欢迎来到SpaZe网站！这是一个让你的网上体验变得更美好的地方，相信我，它会让你的网上冒险变得伟大！'
 keywords: 'SpaZe'
 url: 'https://zlailmm.github.io' # your host
 
@@ -12,14 +12,19 @@ nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
   关于博主: '/about.html'
   友情链接: '/friendLink.html'
 
+#首页
+layout: default
+page-title: SpaZe.
+home-title: make SpaZe great.
+
 # 博主
 author: true
 name: 'Ring'
 NickName: ''
 webtitle: 'SpaZe'
-bio: 'bio'
+bio: '一个慈善家和社会活动家'
 about: true
-aboutyou: '一个慈善家和社会活动家'
+aboutyou: '不管你是什么样的人，我都是给你一个机会。'
 portraits: '/assets/profile.jpeg' # your portraits image file path
 
 # SNS
