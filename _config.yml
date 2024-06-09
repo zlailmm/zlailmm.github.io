@@ -1,8 +1,5 @@
 # Site settings 配置站点
 title: 'SpaZe'
-layout: 'default'
-page-title: 'SpaZe'
-home-title: 'make SpaZe great'
 description: '欢迎来到SpaZe网站！这是一个让你的网上体验变得更美好的地方，相信我，它会让你的网上冒险变得伟大！'
 keywords: 'SpaZe'
 url: 'https://zlailmm.github.io' # your host
