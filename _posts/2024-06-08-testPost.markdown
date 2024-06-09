@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to Spaze!"
 date:   2024-06-09 15:40:21 +0800
 tags: Welcome to Spaze
-color: rgb(255,250,240)
+color: rgb(255,90,240)
 cover: '../assets/test.png'
 subtitle: 'Welcome to Spaze!'
 ---
