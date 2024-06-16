@@ -2,7 +2,7 @@
 layout: post
 title:  "c++继承技巧!"
 date:   2024-06-16 20:33:21 +0800
-tags: c++继承技巧
+tags: c++ 继承
 color: rgb(60,90,155)
 cover: '../assets/test.png'
 subtitle: 'c++继承相关技巧'
