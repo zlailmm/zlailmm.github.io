@@ -14,9 +14,9 @@ subtitle: 'c++继承相关技巧'
 {% highlight ruby %}
 class Parent{
 
-	// Parent 类的成员函数，创建 Son 子类对象
+	# Parent 类的成员函数，创建 Son 子类对象
     void createSon() {
-        // 使用当前 Parent 对象构造 Son 子类对象
+        # 使用当前 Parent 对象构造 Son 子类对象
         Son son(*this);
     }
 }
@@ -25,10 +25,10 @@ class Son : public Parent{
 	Son(const Parent& parent):Parent(parent){};
 }
 int main() {
-    // 创建 Parent 类对象
+    # 创建 Parent 类对象
     Parent parent(10);
 
-    // 在 Parent 的成员函数中创建 Son 子类对象
+    # 在 Parent 的成员函数中创建 Son 子类对象
     parent.createSon(20);
 
     return 0;
