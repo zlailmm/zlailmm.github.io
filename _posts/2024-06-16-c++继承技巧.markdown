@@ -1,20 +1,40 @@
 ---
 layout: post
-title:  "Welcome to Spaze!"
-date:   2024-06-09 15:40:21 +0800
-tags: Welcome to Spaze
-color: rgb(60,90,240)
+title:  "c++继承技巧!"
+date:   2024-06-16 20:33:21 +0800
+tags: c++继承技巧
+color: rgb(60,90,155)
 cover: '../assets/test.png'
-subtitle: 'Welcome to Spaze!'
+subtitle: 'c++继承相关技巧'
 ---
-# 我的神秘冒险
+# 子类继承父类
 
-今天，我来告诉大家一个很神秘的故事。有一天，我在网上发现了一个特别特别神秘的网站，叫做“奇妙大冒险”。
+可以通过初始化列表，用父类Parent的拷贝构造直接将parent的成员变量赋值给son。
 
-我点进去一看，哇！里面有好多好多的神秘冒险等着我去探索！比如，有一座神秘的岛屿，上面长满了五颜六色的珊瑚和美丽的海草，还有一群会说话的海豚在海里欢快地游来游去；还有一座隐藏着宝藏的神秘洞穴，传说里面埋藏着无数珍贵的宝物，但是要找到它们需要勇敢和智慧……
+{% highlight ruby %}
+class Parent{
 
-我决定要成为一个勇敢的探险家，去探索这个神秘的世界！我穿上我的探险服，戴上我的探险帽，拿着我的探险工具，踏上了冒险的旅程。我遇到了好多好多有趣的事情，看到了好多好多美丽的景色，还结交了好多好多新朋友！
+	// Parent 类的成员函数，创建 Son 子类对象
+    void createSon() {
+        // 使用当前 Parent 对象构造 Son 子类对象
+        Son son(*this);
+    }
+}
 
-虽然冒险过程中遇到了一些困难，但是我没有放弃，因为我知道，只要勇敢和坚持，我一定能够完成我的冒险任务，找到属于我的宝藏！
+class Son : public Parent{
+	Son(const Parent& parent):Parent(parent){};
+}
+int main() {
+    // 创建 Parent 类对象
+    Parent parent(10);
 
+    // 在 Parent 的成员函数中创建 Son 子类对象
+    parent.createSon(20);
 
+    return 0;
+}
+{% endhighlight %}
+
+###注意
+
+通过子类调用父类方法时，要注意其改变的是子类的成员变量，如果需要在父类对象中取用，需要将其传给父类对象。
